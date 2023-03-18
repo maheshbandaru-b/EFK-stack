@@ -1,0 +1,7 @@
+helm show values elastic/elasticsearch >> elasticsearch.values
+
+helm install elasticsearch elastic/elasticsearch -f elasticsearch.values -n efk
+
+
+----------------------kibana-----------
+helm show values elastic/kibana >>kibana.values
