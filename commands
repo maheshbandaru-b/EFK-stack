@@ -5,3 +5,7 @@ helm install elasticsearch elastic/elasticsearch -f elasticsearch.values -n efk
 
 ----------------------kibana-----------
 helm show values elastic/kibana >>kibana.values
+
+helm install kibana elastic/kibana -f kibana.values -n efk
+
+helm install filebeat elastic/filebeat -n efk
